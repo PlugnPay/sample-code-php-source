@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<TITLE>Pay for your order</TITLE>
+</HEAD>
+
+<BODY>
+
+<FORM method="post" action="plugnpay.php">
+<INPUT type="hidden" name="publisher_name" value="pnpdemo">
+<INPUT type="hidden" name="publisher_email" value="trash@plugnpay.com">
+
+<br>Name: <INPUT type="text" name="card_name" size="30" maxlength="30">
+<br>Address1: <INPUT type="text" name="card_address1" size="30" maxlength="30">
+<br>Address2: <INPUT type="text" name="card_address2" size="30" maxlength="30">
+<br>City: <INPUT type="text" name="card_city" size="30" maxlength="30">
+<br>State: <INPUT type="text" name="card_state" size="2" maxlength="2">
+<br>Zip: <INPUT type="text" name="card_zip" size="12" maxlength="12">
+
+<p>Card Number: <INPUT type="text" name="card_number" size="20" maxlength="20">
+<br>Card Exp Date: <INPUT type="text" name="card_exp" size="6" maxlength="6"> (MM/YY)
+<br>Amount: <INPUT type="text" name="card_amount" size="6" maxlength="6">
+
+<br><INPUT type="submit" value="Submit">
+</FORM>
+
+</BODY>
+</HTML>
