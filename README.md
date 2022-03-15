@@ -1,8 +1,6 @@
 # sample-code-php-source
 PHP API - cURL
 
-PlugnPay PHP API Documentation
-
 **************************************************************************
 ** This code is NOT officially support by Plug 'n Pay Technologies Inc. **
 **************************************************************************
