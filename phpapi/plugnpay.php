@@ -17,41 +17,6 @@
   It is because your installation of PHP was not configured to support curl.
   Contact your system administrator to have curl setup.
 
-  Version 1.01
-
-  ChangeLog:
-
-  v1.00
-    Develop Chicken Pox
-    Get bored.
-    Learn PHP.
-    Write the module.
-    Total Time 15 minutes.
-
-  v1.00 - 10/08/2003
-    Updated code for generating pnp_transaction_array so it
-    doesn't include junk from parsing the results.  Thanks art.
-    This will not affect old code and should work the same.
-
-  v1.01 - 10/05/2004
-    Add ability to use curl, even when curl is not compiled into PHP
-    Added code to select if curl is compiled or not into PHP & set the curl file path
-    Added curl parameter which can be uncommented for windows 2003 compatibility
-    Updated some of the comments to help users understand what us happening & what to do
-
-  v1.01 - 01/14/2005
-    Fixed non-compile curl usage error with returned array & decoding
-
-  v1.01 - 06/02/2005
-    Updated format of the response HTML pages
-    Updated response message in error.html page.
-
-  v1.01 - 01/05/2012
-    Applied cipher tweak to curl call, to fix issue with CentOS 6 servers
-
-  v1.01 - 10/09/2015
-    Rolled back cipher tweak, to let curl use new stronger ciphers
-
 *******************************************************************************/
     /*
       Set script parameters & answer questions down here...
@@ -87,7 +52,7 @@
         $pnp_post_values .= "card-amount=" . $card_amount . "&";
         $pnp_post_values .= "card-name=" . $card_name . "&";
         $pnp_post_values .= "email=" . $email . "&";
-        $pnp_post_values .= "ipaddress=" . $email . "&";
+        $pnp_post_values .= "ipaddress=" . $_SERVER['REMOTE_ADDR'] . "&";
         // billing address info
         $pnp_post_values .= "card-address1=" . $card_address1 . "&";
         $pnp_post_values .= "card-address2=" . $card_address2 . "&";
