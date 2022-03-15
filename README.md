@@ -10,7 +10,9 @@ in order to use this module.  It is located in the 'Documentation/FAQ' section
 of the admin area.
 
 Requirements:
+
   -- PHP
+
   -- Curl (having curl compiled into PHP is optional, but recommended)
 
   For those wishing to compile curl into PHP, get curl from 'http://curl.haxx.se/'
