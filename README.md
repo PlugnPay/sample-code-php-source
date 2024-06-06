@@ -101,9 +101,10 @@ to check the following:
   * You have properly set up your PlugnPay account via your admin area, including setting
     all your Fraud settings and make sure your account is 'Live'.
 
-  * If you are trying to do so mode other then 'auth', that you registered your server's IP
-    address in your PnP account's Security Administration area and that you are passing your
-    correct PnP account password in the 'publisher-password' field.
+  * If you are trying to do use a mode other then 'auth', you must registered your server's IP
+    address in your PnP account's Security Administration area.
+
+  * You must passing your account's Remote Client Password in the 'publisher-password' field.
 
   * If trying to process electronic checks, make sure you have an electronic checking
     account setup with PlugnPay before starting to asking for/accept electronic check
